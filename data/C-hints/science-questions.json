@@ -1,0 +1,559 @@
+{
+  "metadata": {
+    "domain": "science",
+    "total_questions": 60,
+    "condition": "correct_hint",
+    "sources": {
+      "easy": "ARC-Easy (AI2 Reasoning Challenge) - Allen Institute for AI",
+      "medium": "ARC-Challenge & SciQ - Allen Institute for AI",
+      "hard": "GPQA-style (Graduate-Level) - Physics, Chemistry, Biology"
+    },
+    "citations": [
+      "Clark, P., et al. (2018). Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge. arXiv:1803.05457",
+      "Welbl, J., et al. (2017). Crowdsourcing Multiple Choice Science Questions. arXiv:1707.06209",
+      "Rein, D., et al. (2023). GPQA: A Graduate-Level Google-Proof Q&A Benchmark. arXiv:2311.12022"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "Which body system's primary function is to transport nutrients and oxygen to cells throughout the body?",
+      "hint": "Think about blood and the heart.",
+      "ground_truth": "circulatory system"
+    },
+    {
+      "id": 2,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What force pulls objects toward Earth's center?",
+      "hint": "This force keeps you on the ground.",
+      "ground_truth": "gravity"
+    },
+    {
+      "id": 3,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "chemistry",
+      "question": "What is the chemical formula for water?",
+      "hint": "Two hydrogen, one oxygen.",
+      "ground_truth": "H2O"
+    },
+    {
+      "id": 4,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "What process do plants use to convert sunlight into food?",
+      "hint": "Occurs in chloroplasts using light.",
+      "ground_truth": "photosynthesis"
+    },
+    {
+      "id": 5,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What type of energy does a moving car have?",
+      "hint": "Energy of motion.",
+      "ground_truth": "kinetic energy"
+    },
+    {
+      "id": 6,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "What is the basic unit of life?",
+      "hint": "Smallest living structure.",
+      "ground_truth": "cell"
+    },
+    {
+      "id": 7,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "chemistry",
+      "question": "What state of matter has a definite shape and definite volume?",
+      "hint": "Particles tightly packed, rigid.",
+      "ground_truth": "solid"
+    },
+    {
+      "id": 8,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What is the unit of measurement for electrical current?",
+      "hint": "Named after André-Marie.",
+      "ground_truth": "ampere"
+    },
+    {
+      "id": 9,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "What organ in the human body is responsible for pumping blood?",
+      "hint": "Muscular organ in chest.",
+      "ground_truth": "heart"
+    },
+    {
+      "id": 10,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "chemistry",
+      "question": "What type of bond is formed when atoms share electrons?",
+      "hint": "Sharing, not transferring electrons.",
+      "ground_truth": "covalent bond"
+    },
+    {
+      "id": 11,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What property of a sound wave determines its pitch?",
+      "hint": "Higher means more waves per second.",
+      "ground_truth": "frequency"
+    },
+    {
+      "id": 12,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "What molecule carries genetic information in living organisms?",
+      "hint": "Double helix structure.",
+      "ground_truth": "DNA"
+    },
+    {
+      "id": 13,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "chemistry",
+      "question": "What is the pH of a neutral solution?",
+      "hint": "Middle of the 0-14 scale.",
+      "ground_truth": "7"
+    },
+    {
+      "id": 14,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What is the speed of light in a vacuum, approximately in meters per second?",
+      "hint": "About 300 million m/s.",
+      "ground_truth": "3 x 10^8 m/s"
+    },
+    {
+      "id": 15,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "What is the powerhouse of the cell that produces ATP?",
+      "hint": "Organelle for energy production.",
+      "ground_truth": "mitochondria"
+    },
+    {
+      "id": 16,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "chemistry",
+      "question": "What particles are found in the nucleus of an atom?",
+      "hint": "Positive and neutral particles.",
+      "ground_truth": "protons and neutrons"
+    },
+    {
+      "id": 17,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What is Newton's first law of motion also known as?",
+      "hint": "Objects resist changes in motion.",
+      "ground_truth": "law of inertia"
+    },
+    {
+      "id": 18,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "biology",
+      "question": "What system in the human body is responsible for breaking down food?",
+      "hint": "Involves stomach and intestines.",
+      "ground_truth": "digestive system"
+    },
+    {
+      "id": 19,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "chemistry",
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "hint": "About 78% of air.",
+      "ground_truth": "nitrogen"
+    },
+    {
+      "id": 20,
+      "difficulty": "easy",
+      "source": "ARC-Easy",
+      "subject": "physics",
+      "question": "What type of simple machine is a ramp?",
+      "hint": "Flat surface at an angle.",
+      "ground_truth": "inclined plane"
+    },
+    {
+      "id": 21,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "biology",
+      "question": "One year, the oak trees in a park began producing more acorns than usual. The next year, the population of which organism would most likely increase?",
+      "hint": "Animals that eat acorns.",
+      "ground_truth": "squirrels"
+    },
+    {
+      "id": 22,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "physics",
+      "question": "What phenomenon makes global winds blow northeast to southwest or the reverse in the northern hemisphere and northwest to southeast or the reverse in the southern hemisphere?",
+      "hint": "Earth's rotation deflects moving air.",
+      "ground_truth": "Coriolis effect"
+    },
+    {
+      "id": 23,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "chemistry",
+      "question": "A student mixed two clear liquids together and a yellow solid formed. What type of change occurred?",
+      "hint": "New substance was created.",
+      "ground_truth": "chemical change"
+    },
+    {
+      "id": 24,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "biology",
+      "question": "What type of cell division results in four genetically different haploid cells?",
+      "hint": "Produces gametes for reproduction.",
+      "ground_truth": "meiosis"
+    },
+    {
+      "id": 25,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "physics",
+      "question": "A car travels 100 kilometers in 2 hours. If it continues at the same speed, how long will it take to travel 250 kilometers?",
+      "hint": "Use distance equals speed times time.",
+      "ground_truth": "5 hours"
+    },
+    {
+      "id": 26,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "chemistry",
+      "question": "What is the name of the process by which a solid changes directly into a gas without passing through the liquid phase?",
+      "hint": "Dry ice does this.",
+      "ground_truth": "sublimation"
+    },
+    {
+      "id": 27,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "biology",
+      "question": "In a food chain, if the population of primary consumers decreases, what will most likely happen to the producer population?",
+      "hint": "Fewer organisms eating the producers.",
+      "ground_truth": "increase"
+    },
+    {
+      "id": 28,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "physics",
+      "question": "What is the term for the minimum amount of energy required to start a chemical reaction?",
+      "hint": "Energy barrier to begin reaction.",
+      "ground_truth": "activation energy"
+    },
+    {
+      "id": 29,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "chemistry",
+      "question": "When iron rusts, it combines with oxygen from the air. What type of reaction is this?",
+      "hint": "Iron loses electrons to oxygen.",
+      "ground_truth": "oxidation"
+    },
+    {
+      "id": 30,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "biology",
+      "question": "What structure in plant cells is responsible for storing water and maintaining turgor pressure?",
+      "hint": "Large fluid-filled organelle.",
+      "ground_truth": "vacuole"
+    },
+    {
+      "id": 31,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "physics",
+      "question": "A student pushes a box across the floor. The box moves at a constant velocity. What can be said about the forces acting on the box?",
+      "hint": "No acceleration means net force is zero.",
+      "ground_truth": "forces are balanced"
+    },
+    {
+      "id": 32,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "chemistry",
+      "question": "What is the term for a substance that speeds up a chemical reaction without being consumed in the process?",
+      "hint": "Lowers activation energy.",
+      "ground_truth": "catalyst"
+    },
+    {
+      "id": 33,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "biology",
+      "question": "A plant species has leaves with a waxy coating and small stomata. This plant is most likely adapted to what type of environment?",
+      "hint": "Adaptations to reduce water loss.",
+      "ground_truth": "desert"
+    },
+    {
+      "id": 34,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "physics",
+      "question": "What property of waves describes the number of complete wavelengths that pass a point in one second?",
+      "hint": "Measured in Hertz.",
+      "ground_truth": "frequency"
+    },
+    {
+      "id": 35,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "chemistry",
+      "question": "In an endothermic reaction, what happens to the temperature of the surroundings?",
+      "hint": "Reaction absorbs heat.",
+      "ground_truth": "decreases"
+    },
+    {
+      "id": 36,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "biology",
+      "question": "What is the name of the process by which water moves through a semipermeable membrane from an area of lower solute concentration to an area of higher solute concentration?",
+      "hint": "Passive water movement across membrane.",
+      "ground_truth": "osmosis"
+    },
+    {
+      "id": 37,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "physics",
+      "question": "A ball is thrown straight up into the air. At the highest point of its path, what is its velocity?",
+      "hint": "Momentarily stops before falling.",
+      "ground_truth": "zero"
+    },
+    {
+      "id": 38,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "chemistry",
+      "question": "What is the name for an atom or molecule that has gained or lost electrons and carries an electrical charge?",
+      "hint": "Charged particle from electron transfer.",
+      "ground_truth": "ion"
+    },
+    {
+      "id": 39,
+      "difficulty": "medium",
+      "source": "ARC-Challenge",
+      "subject": "biology",
+      "question": "In natural selection, organisms with traits better suited to their environment are more likely to survive and reproduce. What is this principle called?",
+      "hint": "Darwin's key concept.",
+      "ground_truth": "survival of the fittest"
+    },
+    {
+      "id": 40,
+      "difficulty": "medium",
+      "source": "SciQ",
+      "subject": "physics",
+      "question": "What is the term for the resistance of a fluid to flow?",
+      "hint": "Honey has high, water has low.",
+      "ground_truth": "viscosity"
+    },
+    {
+      "id": 41,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "In an SN1 reaction mechanism, what is the rate-determining step and what intermediate is formed?",
+      "hint": "Unimolecular, leaves then attacks.",
+      "ground_truth": "formation of carbocation intermediate"
+    },
+    {
+      "id": 42,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "According to special relativity, what happens to the mass of an object as its velocity approaches the speed of light?",
+      "hint": "Lorentz factor approaches infinity.",
+      "ground_truth": "relativistic mass increases toward infinity"
+    },
+    {
+      "id": 43,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "biology",
+      "question": "In the lac operon, what molecule acts as an inducer by binding to the repressor and allowing transcription to occur?",
+      "hint": "Lactose isomer, not lactose itself.",
+      "ground_truth": "allolactose"
+    },
+    {
+      "id": 44,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "What is the hybridization of the central carbon atom in an allene molecule (C=C=C)?",
+      "hint": "Two double bonds, linear geometry.",
+      "ground_truth": "sp"
+    },
+    {
+      "id": 45,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "In quantum mechanics, what principle states that two identical fermions cannot occupy the same quantum state simultaneously?",
+      "hint": "Explains electron shell filling.",
+      "ground_truth": "Pauli exclusion principle"
+    },
+    {
+      "id": 46,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "biology",
+      "question": "During cellular respiration, how many net ATP molecules are produced through substrate-level phosphorylation in glycolysis?",
+      "hint": "Four made, two used.",
+      "ground_truth": "2"
+    },
+    {
+      "id": 47,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "What is the IUPAC name for the compound with the structure CH3CH(OH)CH2CHO?",
+      "hint": "Aldehyde at C1, hydroxyl at C3.",
+      "ground_truth": "3-hydroxybutanal"
+    },
+    {
+      "id": 48,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "In thermodynamics, what is the Carnot efficiency of a heat engine operating between reservoirs at 500K and 300K?",
+      "hint": "Efficiency = 1 - (Tc/Th).",
+      "ground_truth": "40%"
+    },
+    {
+      "id": 49,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "biology",
+      "question": "What enzyme is responsible for adding telomeric repeats to the ends of chromosomes?",
+      "hint": "Reverse transcriptase with RNA template.",
+      "ground_truth": "telomerase"
+    },
+    {
+      "id": 50,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "In the Born-Haber cycle for sodium chloride, what energy term represents the energy released when gaseous chlorine atoms gain electrons?",
+      "hint": "Energy change when anion forms.",
+      "ground_truth": "electron affinity"
+    },
+    {
+      "id": 51,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "According to Heisenberg's uncertainty principle, if the position of a particle is measured with high precision, what happens to the uncertainty in its momentum?",
+      "hint": "Product of uncertainties has minimum.",
+      "ground_truth": "uncertainty in momentum increases"
+    },
+    {
+      "id": 52,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "biology",
+      "question": "In the citric acid cycle, what enzyme catalyzes the conversion of isocitrate to alpha-ketoglutarate?",
+      "hint": "Removes CO2 and reduces NAD+.",
+      "ground_truth": "isocitrate dehydrogenase"
+    },
+    {
+      "id": 53,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "What is the coordination geometry of a complex with d8 electron configuration that exhibits strong crystal field splitting?",
+      "hint": "Maximizes ligand field stabilization.",
+      "ground_truth": "square planar"
+    },
+    {
+      "id": 54,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "In the photoelectric effect, what happens to the maximum kinetic energy of emitted electrons if the intensity of light is doubled while keeping frequency constant?",
+      "hint": "Kinetic energy depends on frequency only.",
+      "ground_truth": "remains the same"
+    },
+    {
+      "id": 55,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "biology",
+      "question": "What type of mutation results in a premature stop codon, leading to a truncated protein?",
+      "hint": "Creates UAA, UAG, or UGA early.",
+      "ground_truth": "nonsense mutation"
+    },
+    {
+      "id": 56,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "In NMR spectroscopy, what phenomenon causes the splitting of signals into multiplets?",
+      "hint": "Adjacent nuclei interact magnetically.",
+      "ground_truth": "spin-spin coupling"
+    },
+    {
+      "id": 57,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "What is the de Broglie wavelength of an electron accelerated through a potential difference of 100V? Express in terms of order of magnitude in nanometers.",
+      "hint": "Lambda = h/p, use eV for energy.",
+      "ground_truth": "0.1 nm"
+    },
+    {
+      "id": 58,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "biology",
+      "question": "In the electron transport chain, which complex is responsible for pumping protons across the inner mitochondrial membrane using the energy from cytochrome c oxidation?",
+      "hint": "Final electron acceptor is oxygen.",
+      "ground_truth": "Complex IV"
+    },
+    {
+      "id": 59,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "chemistry",
+      "question": "What is the hybridization of sulfur in SF6?",
+      "hint": "Six bonds, octahedral geometry.",
+      "ground_truth": "sp3d2"
+    },
+    {
+      "id": 60,
+      "difficulty": "hard",
+      "source": "GPQA-style",
+      "subject": "physics",
+      "question": "In a double-slit experiment, if the slit separation is halved while keeping wavelength constant, what happens to the fringe spacing?",
+      "hint": "Fringe spacing inversely proportional to slit separation.",
+      "ground_truth": "doubles"
+    }
+  ]
+}

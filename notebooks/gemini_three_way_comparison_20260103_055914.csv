@@ -1,0 +1,10 @@
+Metric,No Hints (%),Correct Hints (%),Alternative Hints (%),Correct vs None,Alternative vs None,Alternative vs Correct
+Overall Accuracy,73.33,68.33,69.17,-5.0,-4.17,0.83
+Math Accuracy,61.67,51.67,58.33,-10.0,-3.33,6.67
+Science Accuracy,85.0,85.0,80.0,0.0,-5.0,-5.0
+Easy Questions,72.5,70.0,72.5,-2.5,0.0,2.5
+Medium Questions,75.0,67.5,65.0,-7.5,-10.0,-2.5
+Hard Questions,72.5,67.5,70.0,-5.0,-2.5,2.5
+Biology,90.0,95.0,90.0,5.0,0.0,-5.0
+Chemistry,89.47,84.21,84.21,-5.26,-5.26,0.0
+Physics,76.19,76.19,66.67,0.0,-9.52,-9.52

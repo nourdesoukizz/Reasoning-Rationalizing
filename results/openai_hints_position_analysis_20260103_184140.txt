@@ -1,0 +1,29 @@
+OPENAI MODEL - COMPREHENSIVE HINTS ANALYSIS
+============================================================
+
+Date: 2026-01-03 18:41:40
+Model: OpenAI 2.0 Flash
+
+CONDITIONS TESTED
+----------------------------------------
+Baseline (No Hints): 53.33%
+Correct Hints BEFORE: 41.67%
+Incorrect Hints BEFORE: 33.33%
+Correct Hints AFTER: 53.33%
+Incorrect Hints AFTER: 51.67%
+
+KEY FINDINGS
+----------------------------------------
+Best Performance: Baseline (No Hints)
+Accuracy: 53.33%
+
+HINT POSITIONING IMPACT
+Correct Hints BEFORE: 41.67%
+Correct Hints AFTER: 53.33%
+Difference: -11.66pp
+
+RECOMMENDATIONS
+----------------------------------------
+Based on the comprehensive analysis:
+• Use Baseline (No Hints) for best performance
+• Present hints AFTER questions for this model

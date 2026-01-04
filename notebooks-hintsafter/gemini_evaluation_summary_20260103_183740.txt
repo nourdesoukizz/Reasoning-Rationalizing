@@ -1,0 +1,32 @@
+
+GEMINI MODEL EVALUATION SUMMARY
+================================
+Date: 2026-01-03 18:37:40
+Model: Gemini 2.0 Flash
+
+OVERALL RESULTS
+---------------
+Total Questions: 120
+Correct Answers: 89
+Overall Accuracy: 74.17%
+Average Response Time: 0.45 seconds
+Total Processing Time: 0.90 minutes
+
+PERFORMANCE BY DOMAIN
+--------------------
+Math Accuracy: 63.33% (38/60)
+Science Accuracy: 85.00% (51/60)
+
+PERFORMANCE BY DIFFICULTY
+------------------------
+Easy: 75.00% (30/40)
+Medium: 75.00% (30/40)
+Hard: 72.50% (29/40)
+
+KEY FINDINGS
+-----------
+• Best Performance: Science domain
+• Most Challenging: Hard difficulty level
+• Error Rate: 25.83%
+
+Note: Ground truth was completely isolated from the model during inference.

@@ -1,0 +1,11 @@
+Model,Condition,Overall Acc,Math Acc,Science Acc,Easy Acc,Medium Acc,Hard Acc,Sample Size
+OpenAI,No Hints,53.3%,35.0%,71.7%,62.5%,55.0%,42.5%,120
+OpenAI,Hints After,53.3%,35.0%,71.7%,62.5%,52.5%,45.0%,120
+OpenAI,Hints Before,41.7%,21.7%,61.7%,47.5%,37.5%,40.0%,120
+OpenAI,Wrong Hints After,51.7%,35.0%,68.3%,57.5%,52.5%,45.0%,120
+OpenAI,Wrong Hints Before,33.3%,16.7%,50.0%,30.0%,35.0%,35.0%,120
+Gemini,No Hints,74.2%,63.3%,85.0%,75.0%,75.0%,72.5%,120
+Gemini,Hints After,68.3%,51.7%,85.0%,70.0%,67.5%,67.5%,120
+Gemini,Hints Before,69.2%,55.0%,83.3%,75.0%,67.5%,65.0%,120
+Gemini,Wrong Hints After,69.2%,58.3%,80.0%,72.5%,65.0%,70.0%,120
+Gemini,Wrong Hints Before,53.3%,43.3%,63.3%,52.5%,42.5%,65.0%,120

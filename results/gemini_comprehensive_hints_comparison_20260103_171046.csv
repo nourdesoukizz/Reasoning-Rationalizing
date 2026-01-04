@@ -1,0 +1,5 @@
+Condition,Overall (%),Math (%),Science (%),Hint Position,Hint Type
+Correct Hints BEFORE,69.17,55.0,83.33,BEFORE,Correct
+Incorrect Hints BEFORE,53.33,43.33,63.33,BEFORE,Incorrect
+Correct Hints AFTER,68.33,51.67,85.0,AFTER,Correct
+Incorrect Hints AFTER,69.17,58.33,80.0,AFTER,Incorrect

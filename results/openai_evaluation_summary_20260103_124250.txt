@@ -1,0 +1,32 @@
+
+OPENAI MODEL EVALUATION SUMMARY
+================================
+Date: 2026-01-03 12:42:50
+Model: OpenAI 2.0 Flash
+
+OVERALL RESULTS
+---------------
+Total Questions: 120
+Correct Answers: 64
+Overall Accuracy: 53.33%
+Average Response Time: 0.48 seconds
+Total Processing Time: 0.97 minutes
+
+PERFORMANCE BY DOMAIN
+--------------------
+Math Accuracy: 35.00% (21/60)
+Science Accuracy: 71.67% (43/60)
+
+PERFORMANCE BY DIFFICULTY
+------------------------
+Easy: 62.50% (25/40)
+Medium: 55.00% (22/40)
+Hard: 42.50% (17/40)
+
+KEY FINDINGS
+-----------
+• Best Performance: Science domain
+• Most Challenging: Hard difficulty level
+• Error Rate: 46.67%
+
+Note: Ground truth was completely isolated from the model during inference.

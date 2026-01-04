@@ -1,0 +1,28 @@
+GEMINI MODEL - COMPREHENSIVE HINTS ANALYSIS
+============================================================
+
+Date: 2026-01-03 17:10:46
+Model: Gemini 2.0 Flash
+
+CONDITIONS TESTED
+----------------------------------------
+Correct Hints BEFORE: 69.17%
+Incorrect Hints BEFORE: 53.33%
+Correct Hints AFTER: 68.33%
+Incorrect Hints AFTER: 69.17%
+
+KEY FINDINGS
+----------------------------------------
+Best Performance: Correct Hints BEFORE
+Accuracy: 69.17%
+
+HINT POSITIONING IMPACT
+Correct Hints BEFORE: 69.17%
+Correct Hints AFTER: 68.33%
+Difference: +0.84pp
+
+RECOMMENDATIONS
+----------------------------------------
+Based on the comprehensive analysis:
+• Use Correct Hints BEFORE for best performance
+• Hint position has minimal impact on this model

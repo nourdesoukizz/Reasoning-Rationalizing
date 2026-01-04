@@ -1,0 +1,28 @@
+GEMINI EVALUATION - HINTS BEFORE QUESTIONS
+==================================================
+
+Date: 2026-01-03 16:55:51
+Model: Gemini 2.0 Flash
+Approach: Hints presented BEFORE questions
+
+OVERALL RESULTS
+------------------------------
+Total Questions: 120
+Correct Answers: 83
+Overall Accuracy: 69.17%
+
+PERFORMANCE BY DOMAIN
+------------------------------
+MATH: 55.00% (33/60)
+SCIENCE: 83.33% (50/60)
+
+PERFORMANCE BY DIFFICULTY
+------------------------------
+EASY: 75.00% (30/40)
+MEDIUM: 67.50% (27/40)
+HARD: 65.00% (26/40)
+
+KEY FINDING
+------------------------------
+Hints were presented BEFORE questions to test if
+upfront context improves model performance.

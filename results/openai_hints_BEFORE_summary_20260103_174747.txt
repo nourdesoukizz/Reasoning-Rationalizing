@@ -1,0 +1,28 @@
+OPENAI EVALUATION - HINTS BEFORE QUESTIONS
+==================================================
+
+Date: 2026-01-03 17:47:47
+Model: OpenAI 2.0 Flash
+Approach: Hints presented BEFORE questions
+
+OVERALL RESULTS
+------------------------------
+Total Questions: 120
+Correct Answers: 50
+Overall Accuracy: 41.67%
+
+PERFORMANCE BY DOMAIN
+------------------------------
+MATH: 21.67% (13/60)
+SCIENCE: 61.67% (37/60)
+
+PERFORMANCE BY DIFFICULTY
+------------------------------
+EASY: 47.50% (19/40)
+MEDIUM: 37.50% (15/40)
+HARD: 40.00% (16/40)
+
+KEY FINDING
+------------------------------
+Hints were presented BEFORE questions to test if
+upfront context improves model performance.

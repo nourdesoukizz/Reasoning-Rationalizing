@@ -1,4 +1,4 @@
-# 🧠 Reasoning or Rationalizing? Exposing Confirmation Bias in Autoregressive Language Models
+# 🧠 Reasoning or Rationalizing? Testing Model Robustness Against Misleading Information
 
 ## 📊 Key Results at a Glance
 
@@ -13,11 +13,11 @@
 
 ## 🎯 Research Question
 
-**Do autoregressive LLMs exhibit structural confirmation bias due to their left-to-right generation architecture?**
+**How robust are autoregressive LLMs against misleading information, and does the position of this information affect their reasoning accuracy?**
 
-Specifically, we investigate whether presenting information (hints) before vs. after questions fundamentally alters model reasoning trajectories, revealing an architectural vulnerability where models rationalize rather than reason.
+Specifically, we investigate whether models can maintain correct reasoning when exposed to incorrect hints, and whether the timing of this exposure (before vs. after questions) affects their robustness to misinformation.
 
-## 🔬 Core Hypothesis
+## 🔬 Robustness Testing Framework
 
 Autoregressive models generate tokens sequentially, with each token conditioned on all previous tokens:
 
@@ -25,11 +25,11 @@ Autoregressive models generate tokens sequentially, with each token conditioned 
 P(response) = P(t₁) × P(t₂|t₁) × P(t₃|t₁,t₂) × ... × P(tₙ|t₁...tₙ₋₁)
 ```
 
-This architectural constraint creates three critical implications:
+This architectural constraint reveals three robustness vulnerabilities:
 
-1. **Early Anchoring Effect**: Information presented first disproportionately influences the entire reasoning trajectory
-2. **Momentum Lock-in**: Once committed to a reasoning path, the model cannot backtrack without contradicting its accumulated token history
-3. **Asymmetric Vulnerability**: Misleading information should cause more damage when presented before questions than after
+1. **Information Position Sensitivity**: Models show different robustness levels based on when misleading information appears
+2. **Reasoning Fragility**: Models struggle to maintain correct reasoning paths when exposed to contradictory information
+3. **Asymmetric Robustness**: Models are significantly less robust to early misinformation than late misinformation
 
 ## 📈 Key Findings
 
@@ -38,7 +38,7 @@ This architectural constraint creates three critical implications:
 - **OpenAI**: Shows resistance to correct hints but collapses with incorrect ones
 - **Implication**: Models may be optimizing for coherence over correctness
 
-### 2. Position Matters - Confirming Architectural Bias
+### 2. Position Matters - Robustness Varies with Information Timing
 - **Incorrect hints BEFORE**: Both models drop ~20 percentage points
 - **Incorrect hints AFTER**: Gemini -5pp, OpenAI -1.6pp
 - **The 4x difference** proves early context anchors reasoning more strongly
@@ -46,7 +46,7 @@ This architectural constraint creates three critical implications:
 ### 3. Models Exhibit Different Failure Modes
 - **Gemini**: Higher baseline (74.2%) but more susceptible to any hints
 - **OpenAI**: Lower baseline (53.3%) but catastrophic failure with early misinformation (→33.3%)
-- **Pattern**: Stronger models may be MORE vulnerable to confirmation bias
+- **Pattern**: Higher-performing models may show LOWER robustness to misleading information
 
 ## 🛠️ Experimental Design
 
@@ -69,7 +69,7 @@ Each question is evaluated under controlled conditions with hints that either he
 
 ## 🏗️ Architectural Interpretation
 
-The autoregressive architecture creates a **structural** confirmation bias, not a learned behavior:
+The autoregressive architecture creates **structural robustness limitations**, not just learned behaviors:
 
 ```python
 # When hint appears FIRST:
@@ -104,7 +104,7 @@ Standard reasoning benchmarks (GSM8K, MATH, ARC) measure only:
 
 ## 🚀 Contributions
 
-1. **Architectural Insight**: Demonstrates that confirmation bias is baked into autoregressive architecture
+1. **Robustness Assessment**: Quantifies how vulnerable models are to misleading information
 2. **Simple Protocol**: No expensive compute required—just careful prompt manipulation  
 3. **Benchmark Blindspot**: Exposes critical gap in current evaluation methods
 4. **Quantified Effect**: ~20pp accuracy drop with early misinformation (4x worse than late misinformation)
@@ -159,7 +159,7 @@ export GEMINI_API_KEY="your-key"
 2. **Analyze Chain-of-Thought**: Examine how models justify wrong answers
 3. **Bidirectional Architectures**: Compare with models that can "look ahead"
 4. **Adversarial Hint Generation**: Systematically find worst-case misleading hints
-5. **Mitigation Strategies**: Develop prompting techniques to reduce confirmation bias
+5. **Mitigation Strategies**: Develop techniques to improve model robustness against misinformation
 
 ## 📚 References
 
@@ -205,7 +205,7 @@ export GEMINI_API_KEY="your-key"
 If you use this research, please cite:
 ```bibtex
 @article{reasoning-rationalizing-2024,
-  title={Reasoning or Rationalizing? Exposing Confirmation Bias in Autoregressive Language Models},
+  title={Reasoning or Rationalizing? Testing Model Robustness Against Misleading Information},
   author={[Nour Desouki},
   year={2026},
   journal={arXiv preprint}
@@ -229,7 +229,7 @@ We welcome contributions! Areas of interest:
 
 ## 💡 Key Takeaway
 
-**Autoregressive LLMs don't reason—they rationalize.** The sequential generation architecture creates an inescapable confirmation bias where early context anchors the entire output trajectory. This isn't a training issue to be fixed; it's a fundamental architectural constraint that must be understood and mitigated in deployment.
+**Autoregressive LLMs lack robustness against misleading information.** The sequential generation architecture creates fundamental vulnerabilities where models fail to maintain correct reasoning when exposed to incorrect hints, especially when that misinformation appears early. This robustness failure isn't a training issue to be fixed; it's a fundamental architectural limitation that must be understood and mitigated in deployment.
 
 ---
 

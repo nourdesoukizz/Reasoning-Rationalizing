@@ -28,6 +28,12 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
+# Node
+node_modules/
+
+# Remotion
+frontend/demo-video/out/
+
 # Project specific
 *.log
 *.cache

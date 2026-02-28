@@ -1,5 +1,12 @@
 # 🧠 Reasoning or Rationalizing? Testing Model Robustness Against Misleading Information
 
+## Demo Video
+
+<div align="center">
+  <video src="assets/demo-video.mp4" width="100%" controls></video>
+  <p><em>60-second overview of our research findings</em></p>
+</div>
+
 ## 📊 Key Results at a Glance
 
 ![Model Performance Comparison](assets/comprehensive_comparison.png)

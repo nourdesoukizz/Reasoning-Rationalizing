@@ -3,7 +3,7 @@
 ## Demo Video
 
 <div align="center">
-  <video src="assets/demo-video.mp4" width="100%" controls></video>
+  <video src="https://github.com/user-attachments/assets/e2247cdc-def5-4eba-be5a-1b5a12a95e59" width="100%" autoplay loop muted playsinline></video>
   <p><em>60-second overview of our research findings</em></p>
 </div>
 
